@@ -48,14 +48,40 @@
   width: 100%;
 }
 
-.list div {
+.list .list-item {
   width: 100%;
-  background-color: lemonchiffon;
+  background-color: rgb(250, 244, 190);
   cursor: pointer;
   color: black;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkbox {
+  height: 16px;
+  width: 16px;
+}
+
+.list .list-item:hover {
+  background-color: rgb(229, 221, 143);
+}
+
+.list-text {
+  width: 100%;
+  padding: 0px 10px;
+}
+
+.delete-icon {
+  height: 24px;
+  width: 24px;
+}
+
+.strikethrough {
+  text-decoration: line-through;
 }
 
 @media screen and (max-width: 768px) {
